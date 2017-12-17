@@ -71,6 +71,9 @@
 		EA368CCC1FE724E1001F262D /* AskMonaApi */ = {
 			isa = PBXGroup;
 			children = (
+				EA368CEA1FE72697001F262D /* Network */,
+				EA368CE81FE72697001F262D /* Models */,
+				EA368CE91FE72697001F262D /* Extensions */,
 				EA368CCD1FE724E1001F262D /* AskMonaApi.h */,
 				EA368CCE1FE724E1001F262D /* Info.plist */,
 			);
@@ -80,10 +83,63 @@
 		EA368CD71FE724E1001F262D /* AskMonaApiTests */ = {
 			isa = PBXGroup;
 			children = (
+				EA368CE51FE7268F001F262D /* Network */,
+				EA368CE41FE7268F001F262D /* Models */,
+				EA368CE71FE7268F001F262D /* Extensions */,
+				EA368CE61FE7268F001F262D /* Resources */,
 				EA368CD81FE724E1001F262D /* AskMonaApiTests.swift */,
 				EA368CDA1FE724E1001F262D /* Info.plist */,
 			);
 			path = AskMonaApiTests;
+			sourceTree = "<group>";
+		};
+		EA368CE41FE7268F001F262D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA368CE51FE7268F001F262D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EA368CE61FE7268F001F262D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA368CE71FE7268F001F262D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EA368CE81FE72697001F262D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA368CE91FE72697001F262D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EA368CEA1FE72697001F262D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
