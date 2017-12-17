@@ -10,6 +10,7 @@
 		EA368CD41FE724E1001F262D /* AskMonaApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA368CCA1FE724E1001F262D /* AskMonaApi.framework */; };
 		EA368CD91FE724E1001F262D /* AskMonaApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA368CD81FE724E1001F262D /* AskMonaApiTests.swift */; };
 		EA368CDB1FE724E1001F262D /* AskMonaApi.h in Headers */ = {isa = PBXBuildFile; fileRef = EA368CCD1FE724E1001F262D /* AskMonaApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA368CEC1FE727A2001F262D /* ApiRequestSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA368CEB1FE727A2001F262D /* ApiRequestSetting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		EA368CD31FE724E1001F262D /* AskMonaApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AskMonaApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA368CD81FE724E1001F262D /* AskMonaApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMonaApiTests.swift; sourceTree = "<group>"; };
 		EA368CDA1FE724E1001F262D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA368CEB1FE727A2001F262D /* ApiRequestSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestSetting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		EA368CEA1FE72697001F262D /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				EA368CEB1FE727A2001F262D /* ApiRequestSetting.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -200,10 +203,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "佐野正和";
+				ORGANIZATIONNAME = kz56cd;
 				TargetAttributes = {
 					EA368CC91FE724E1001F262D = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					EA368CD21FE724E1001F262D = {
@@ -252,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA368CEC1FE727A2001F262D /* ApiRequestSetting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +395,7 @@
 		EA368CDF1FE724E1001F262D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -403,6 +409,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cc.kz56cd.AskMonaApi;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -411,6 +418,7 @@
 		EA368CE01FE724E1001F262D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -432,6 +440,7 @@
 		EA368CE21FE724E1001F262D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZMTZ3U33V;
 				INFOPLIST_FILE = AskMonaApiTests/Info.plist;
@@ -446,6 +455,7 @@
 		EA368CE31FE724E1001F262D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZMTZ3U33V;
 				INFOPLIST_FILE = AskMonaApiTests/Info.plist;
