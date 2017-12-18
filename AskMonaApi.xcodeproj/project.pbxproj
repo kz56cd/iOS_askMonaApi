@@ -11,6 +11,18 @@
 		EA368CD91FE724E1001F262D /* AskMonaApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA368CD81FE724E1001F262D /* AskMonaApiTests.swift */; };
 		EA368CDB1FE724E1001F262D /* AskMonaApi.h in Headers */ = {isa = PBXBuildFile; fileRef = EA368CCD1FE724E1001F262D /* AskMonaApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA368CEC1FE727A2001F262D /* ApiRequestSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA368CEB1FE727A2001F262D /* ApiRequestSetting.swift */; };
+		EA368CF31FE734C1001F262D /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA368CF11FE734C1001F262D /* APIKit.framework */; };
+		EA368CF51FE73519001F262D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA368CF01FE734C1001F262D /* Result.framework */; };
+		EA368CF61FE73563001F262D /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA368CF11FE734C1001F262D /* APIKit.framework */; };
+		EA368CF71FE73563001F262D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA368CF01FE734C1001F262D /* Result.framework */; };
+		EA368CFB1FE73563001F262D /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA368CF81FE73563001F262D /* OHHTTPStubs.framework */; };
+		EA368CFC1FE73563001F262D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA368CF91FE73563001F262D /* Quick.framework */; };
+		EA368CFD1FE73563001F262D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA368CFA1FE73563001F262D /* Nimble.framework */; };
+		EA368D131FE73619001F262D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA368CFA1FE73563001F262D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA368D141FE73619001F262D /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA368CF81FE73563001F262D /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA368D151FE73619001F262D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA368CF91FE73563001F262D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA368D161FE73619001F262D /* APIKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA368CF11FE734C1001F262D /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA368D171FE73619001F262D /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA368CF01FE734C1001F262D /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +35,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EA368D121FE73611001F262D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EA368D131FE73619001F262D /* Nimble.framework in CopyFiles */,
+				EA368D141FE73619001F262D /* OHHTTPStubs.framework in CopyFiles */,
+				EA368D151FE73619001F262D /* Quick.framework in CopyFiles */,
+				EA368D161FE73619001F262D /* APIKit.framework in CopyFiles */,
+				EA368D171FE73619001F262D /* Result.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		EA368CCA1FE724E1001F262D /* AskMonaApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AskMonaApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA368CCD1FE724E1001F262D /* AskMonaApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AskMonaApi.h; sourceTree = "<group>"; };
@@ -31,6 +60,11 @@
 		EA368CD81FE724E1001F262D /* AskMonaApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMonaApiTests.swift; sourceTree = "<group>"; };
 		EA368CDA1FE724E1001F262D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA368CEB1FE727A2001F262D /* ApiRequestSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestSetting.swift; sourceTree = "<group>"; };
+		EA368CF01FE734C1001F262D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		EA368CF11FE734C1001F262D /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		EA368CF81FE73563001F262D /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
+		EA368CF91FE73563001F262D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		EA368CFA1FE73563001F262D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA368CF51FE73519001F262D /* Result.framework in Frameworks */,
+				EA368CF31FE734C1001F262D /* APIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +81,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA368CFB1FE73563001F262D /* OHHTTPStubs.framework in Frameworks */,
+				EA368CFC1FE73563001F262D /* Quick.framework in Frameworks */,
+				EA368CFD1FE73563001F262D /* Nimble.framework in Frameworks */,
+				EA368CF61FE73563001F262D /* APIKit.framework in Frameworks */,
+				EA368CF71FE73563001F262D /* Result.framework in Frameworks */,
 				EA368CD41FE724E1001F262D /* AskMonaApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +99,7 @@
 				EA368CCC1FE724E1001F262D /* AskMonaApi */,
 				EA368CD71FE724E1001F262D /* AskMonaApiTests */,
 				EA368CCB1FE724E1001F262D /* Products */,
+				EA368CEF1FE734C1001F262D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +187,18 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		EA368CEF1FE734C1001F262D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA368CFA1FE73563001F262D /* Nimble.framework */,
+				EA368CF81FE73563001F262D /* OHHTTPStubs.framework */,
+				EA368CF91FE73563001F262D /* Quick.framework */,
+				EA368CF11FE734C1001F262D /* APIKit.framework */,
+				EA368CF01FE734C1001F262D /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -167,6 +221,7 @@
 				EA368CC61FE724E1001F262D /* Frameworks */,
 				EA368CC71FE724E1001F262D /* Headers */,
 				EA368CC81FE724E1001F262D /* Resources */,
+				EA368CF41FE734D2001F262D /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -184,6 +239,7 @@
 				EA368CCF1FE724E1001F262D /* Sources */,
 				EA368CD01FE724E1001F262D /* Frameworks */,
 				EA368CD11FE724E1001F262D /* Resources */,
+				EA368D121FE73611001F262D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -250,6 +306,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EA368CF41FE734D2001F262D /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA368CC51FE724E1001F262D /* Sources */ = {
@@ -403,6 +478,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AskMonaApi/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -426,6 +505,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AskMonaApi/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -443,6 +526,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZMTZ3U33V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AskMonaApiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.kz56cd.AskMonaApiTests;
@@ -458,6 +545,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZMTZ3U33V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AskMonaApiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.kz56cd.AskMonaApiTests;
