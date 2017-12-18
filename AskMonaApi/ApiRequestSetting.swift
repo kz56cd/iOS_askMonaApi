@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import APIKit
 
 protocol ApiRequestSetting {
     static var hostName: String { get }
