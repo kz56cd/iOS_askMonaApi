@@ -23,6 +23,11 @@
 		EA368D151FE73619001F262D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA368CF91FE73563001F262D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EA368D161FE73619001F262D /* APIKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA368CF11FE734C1001F262D /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EA368D171FE73619001F262D /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA368CF01FE734C1001F262D /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA368D191FE7372B001F262D /* AskMonaApiClientRequestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA368D181FE7372B001F262D /* AskMonaApiClientRequestSpec.swift */; };
+		EA368D1B1FE73D9D001F262D /* AskMonaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA368D1A1FE73D9D001F262D /* AskMonaRequest.swift */; };
+		EA368D1F1FE73E18001F262D /* AskMonaSessionTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA368D1E1FE73E18001F262D /* AskMonaSessionTask.swift */; };
+		EA368D211FE73EA4001F262D /* AskMonaApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA368D201FE73EA4001F262D /* AskMonaApiError.swift */; };
+		EA368D231FE73EDF001F262D /* AskMonaApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA368D221FE73EDF001F262D /* AskMonaApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,11 @@
 		EA368CF81FE73563001F262D /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		EA368CF91FE73563001F262D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		EA368CFA1FE73563001F262D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		EA368D181FE7372B001F262D /* AskMonaApiClientRequestSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMonaApiClientRequestSpec.swift; sourceTree = "<group>"; };
+		EA368D1A1FE73D9D001F262D /* AskMonaRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMonaRequest.swift; sourceTree = "<group>"; };
+		EA368D1E1FE73E18001F262D /* AskMonaSessionTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMonaSessionTask.swift; sourceTree = "<group>"; };
+		EA368D201FE73EA4001F262D /* AskMonaApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMonaApiError.swift; sourceTree = "<group>"; };
+		EA368D221FE73EDF001F262D /* AskMonaApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMonaApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +125,7 @@
 		EA368CCC1FE724E1001F262D /* AskMonaApi */ = {
 			isa = PBXGroup;
 			children = (
+				EA368CEB1FE727A2001F262D /* ApiRequestSetting.swift */,
 				EA368CEA1FE72697001F262D /* Network */,
 				EA368CE81FE72697001F262D /* Models */,
 				EA368CE91FE72697001F262D /* Extensions */,
@@ -147,6 +158,7 @@
 		EA368CE51FE7268F001F262D /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				EA368D181FE7372B001F262D /* AskMonaApiClientRequestSpec.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -182,7 +194,10 @@
 		EA368CEA1FE72697001F262D /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				EA368CEB1FE727A2001F262D /* ApiRequestSetting.swift */,
+				EA368D221FE73EDF001F262D /* AskMonaApiClient.swift */,
+				EA368D201FE73EA4001F262D /* AskMonaApiError.swift */,
+				EA368D1A1FE73D9D001F262D /* AskMonaRequest.swift */,
+				EA368D1E1FE73E18001F262D /* AskMonaSessionTask.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -222,6 +237,7 @@
 				EA368CC71FE724E1001F262D /* Headers */,
 				EA368CC81FE724E1001F262D /* Resources */,
 				EA368CF41FE734D2001F262D /* Carthage */,
+				EAEC6E9F1FE91361007DDD0C /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -324,6 +340,20 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
+		EAEC6E9F1FE91361007DDD0C /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -331,6 +361,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA368D1F1FE73E18001F262D /* AskMonaSessionTask.swift in Sources */,
+				EA368D231FE73EDF001F262D /* AskMonaApiClient.swift in Sources */,
+				EA368D1B1FE73D9D001F262D /* AskMonaRequest.swift in Sources */,
+				EA368D211FE73EA4001F262D /* AskMonaApiError.swift in Sources */,
 				EA368CEC1FE727A2001F262D /* ApiRequestSetting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA368CD91FE724E1001F262D /* AskMonaApiTests.swift in Sources */,
+				EA368D191FE7372B001F262D /* AskMonaApiClientRequestSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
