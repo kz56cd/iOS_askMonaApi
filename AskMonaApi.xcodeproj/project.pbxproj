@@ -237,6 +237,7 @@
 				EA368CC71FE724E1001F262D /* Headers */,
 				EA368CC81FE724E1001F262D /* Resources */,
 				EA368CF41FE734D2001F262D /* Carthage */,
+				EAEC6E9F1FE91361007DDD0C /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -338,6 +339,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		EAEC6E9F1FE91361007DDD0C /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
