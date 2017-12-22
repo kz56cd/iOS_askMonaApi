@@ -125,7 +125,6 @@
 		EA368CCC1FE724E1001F262D /* AskMonaApi */ = {
 			isa = PBXGroup;
 			children = (
-				EA368CEB1FE727A2001F262D /* ApiRequestSetting.swift */,
 				EA368CEA1FE72697001F262D /* Network */,
 				EA368CE81FE72697001F262D /* Models */,
 				EA368CE91FE72697001F262D /* Extensions */,
@@ -194,10 +193,9 @@
 		EA368CEA1FE72697001F262D /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				EA368D221FE73EDF001F262D /* AskMonaApiClient.swift */,
-				EA368D201FE73EA4001F262D /* AskMonaApiError.swift */,
-				EA368D1A1FE73D9D001F262D /* AskMonaRequest.swift */,
-				EA368D1E1FE73E18001F262D /* AskMonaSessionTask.swift */,
+				EA368CEB1FE727A2001F262D /* ApiRequestSetting.swift */,
+				EA434F241FED62C700F31E64 /* client */,
+				EA434F231FED62C700F31E64 /* topic */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -212,6 +210,24 @@
 				EA368CF01FE734C1001F262D /* Result.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA434F231FED62C700F31E64 /* topic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = topic;
+			sourceTree = "<group>";
+		};
+		EA434F241FED62C700F31E64 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				EA368D221FE73EDF001F262D /* AskMonaApiClient.swift */,
+				EA368D201FE73EA4001F262D /* AskMonaApiError.swift */,
+				EA368D1A1FE73D9D001F262D /* AskMonaRequest.swift */,
+				EA368D1E1FE73E18001F262D /* AskMonaSessionTask.swift */,
+			);
+			path = client;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
