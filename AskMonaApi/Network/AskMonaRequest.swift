@@ -10,5 +10,5 @@ import Foundation
 import APIKit
 
 public protocol AskMonaRequest: Request {
-    
+
 }

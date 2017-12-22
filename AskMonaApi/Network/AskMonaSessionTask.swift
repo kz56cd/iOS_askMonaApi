@@ -14,11 +14,11 @@ public class AskMonaSessionTask {
     public init(sessionTask: SessionTask) {
         self.sessionTask = sessionTask
     }
-    
+
     public func resume() {
         sessionTask.resume()
     }
-    
+
     public func cancel() {
         sessionTask.cancel()
     }

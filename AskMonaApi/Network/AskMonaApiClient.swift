@@ -18,9 +18,9 @@ public protocol AskMonaClientProtocol {
 }
 
 public final class AskMonaClient: AskMonaClientProtocol {
-    // TODO: unuse?
+    // : unuse?
     //    public init() {}
-    
+
     public func send<RequestType: AskMonaRequest>(
         _ request: RequestType,
         handler: @escaping (Result<RequestType.Response, AskMonaApiError>) -> Void)
