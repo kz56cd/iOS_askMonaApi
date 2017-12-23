@@ -16,7 +16,7 @@ public struct TopicApiError: Error {
 public struct TopicApiErrorInfo: Codable {
     let status: Int
     let message: String
-    
+
     enum CodingKeys: String, CodingKey {
         case status
         case message = "error"

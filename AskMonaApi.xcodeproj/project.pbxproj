@@ -29,6 +29,7 @@
 		EA368D211FE73EA4001F262D /* AskMonaApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA368D201FE73EA4001F262D /* AskMonaApiError.swift */; };
 		EA368D231FE73EDF001F262D /* AskMonaApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA368D221FE73EDF001F262D /* AskMonaApiClient.swift */; };
 		EAD80BD31FEE699300D51E80 /* TopicApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD80BD21FEE699300D51E80 /* TopicApiError.swift */; };
+		EAD80BD51FEE6BFD00D51E80 /* TopicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD80BD41FEE6BFD00D51E80 /* TopicRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		EA368D201FE73EA4001F262D /* AskMonaApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMonaApiError.swift; sourceTree = "<group>"; };
 		EA368D221FE73EDF001F262D /* AskMonaApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMonaApiClient.swift; sourceTree = "<group>"; };
 		EAD80BD21FEE699300D51E80 /* TopicApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicApiError.swift; sourceTree = "<group>"; };
+		EAD80BD41FEE6BFD00D51E80 /* TopicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD80BD21FEE699300D51E80 /* TopicApiError.swift */,
+				EAD80BD41FEE6BFD00D51E80 /* TopicRequest.swift */,
 			);
 			path = topic;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD80BD51FEE6BFD00D51E80 /* TopicRequest.swift in Sources */,
 				EA368D1F1FE73E18001F262D /* AskMonaSessionTask.swift in Sources */,
 				EA368D231FE73EDF001F262D /* AskMonaApiClient.swift in Sources */,
 				EA368D1B1FE73D9D001F262D /* AskMonaRequest.swift in Sources */,
