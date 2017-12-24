@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import APIKit
 
 public struct TopicRequestSetting: ApiRequestSetting {
-    static let hostName: String = ""
-    static var basePath: String = ""
+    static let hostName: String = "http://askmona.org/v1"
+    static var basePath: String = "/topics"
     // add unique id
 }
 
@@ -34,18 +35,20 @@ public extension TopicRequest {
     }
 }
 
-public protocol SingleItemTopicRequest: TopicRequest {
-    associatedtype Response: Codable
+public protocol MultipleItemTopicRequest: TopicRequest where Response: Decodable {
+
 }
 
-public extension SingleItemTopicRequest {
-//    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> SingleItemTopicRequest.Response {
-//        guard let dictionary = object as? [String: Any],
-//            let item = dictionary["topics"] as? [String: Any] else {
-//                throw Error // FIXME:
-//        }
-//        return try Codable(from: item)
-//    }
+// TODO: FIX pagination methods
+public extension MultipleItemTopicRequest {
+    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
+        guard let dictionary = object as? [String: Any],
+            let item = dictionary["topics"] as? [String: Any] else {
+                throw ResponseError.unexpectedObject(object)
+        }
+        let jsonData = try JSONEncoder().encode(item)
+        return try JSONDecoder().decode(Response.self, from: jsonData)
+    }
 }
 
 //public protocol MultipleItemTopicRequest: TopicRequest {
