@@ -34,8 +34,8 @@ class TopicRequestWithNetworkSpec: QuickSpec {
             }
 
             // assert
-            expect(result).toEventuallyNot(beNil())
-            expect(error).toEventually(beNil())
+            expect(result).toEventuallyNot(beNil(), timeout: 1.5)
+            expect(error).toEventually(beNil(), timeout: 1.5)
         }
     }
 
