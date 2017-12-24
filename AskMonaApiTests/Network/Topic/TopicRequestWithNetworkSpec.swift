@@ -25,7 +25,8 @@ class TopicRequestWithNetworkSpec: QuickSpec {
             // act
             var result: Topics?
             var error: Error? = TestError.makeNotChangedError()
-            Session.send(TopicListRequest()) { _result in // swiftlint:disable:this identifier_name
+            let request = TopicListRequest(order: .created)
+            Session.send(request) { _result in // swiftlint:disable:this identifier_name
                 result = _result.value
                 error = _result.error
 

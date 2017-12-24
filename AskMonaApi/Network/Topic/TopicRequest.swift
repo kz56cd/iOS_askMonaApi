@@ -16,7 +16,7 @@ public struct TopicRequestSetting: ApiRequestSetting {
 }
 
 public protocol TopicRequest: AskMonaRequest {
-    // stub
+    var preParameters: [String: Any]? { get }
 }
 
 public extension TopicRequest {
@@ -29,8 +29,8 @@ public extension TopicRequest {
 //    }
 
     var parameters: Any? {
-        var _parameters: [String: Any] = [:]
-        // add any parameter (as you like)
+        let _parameters: [String: Any] = preParameters ?? [:]
+        // add any common parameters (AS YOU LIKE)
         return _parameters
     }
 }
