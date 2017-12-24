@@ -10,7 +10,7 @@ import Foundation
 import APIKit
 
 public struct TopicListRequest: MultipleItemTopicRequest {
-    public typealias Response = TopicsResponse
+    public typealias Response = Topics
     public let method: HTTPMethod = .get
     public let path: String = "/list" // NOTE:
 
