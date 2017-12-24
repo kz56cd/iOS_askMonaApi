@@ -10,7 +10,7 @@ import Foundation
 import APIKit
 
 public struct TopicRequestSetting: ApiRequestSetting {
-    static let hostName: String = "http://askmona.org/v1"
+    static let hostName: String = "askmona.org/v1"
     static var basePath: String = "/topics"
     // add unique id
 }
@@ -35,7 +35,7 @@ public extension TopicRequest {
     }
 }
 
-public protocol MultipleItemTopicRequest: TopicRequest where Response: Decodable {
+public protocol MultipleItemTopicRequest: TopicRequest where Response: Codable {
 
 }
 
@@ -43,10 +43,13 @@ public protocol MultipleItemTopicRequest: TopicRequest where Response: Decodable
 public extension MultipleItemTopicRequest {
     public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
         guard let dictionary = object as? [String: Any],
-            let item = dictionary["topics"] as? [String: Any] else {
+            let status = dictionary["status"] as? Int else {
                 throw ResponseError.unexpectedObject(object)
         }
-        let jsonData = try JSONEncoder().encode(item)
+        if status != 1 {
+            throw ResponseError.unexpectedObject(object)
+        }
+        let jsonData = try JSONSerialization.data(withJSONObject: dictionary)
         return try JSONDecoder().decode(Response.self, from: jsonData)
     }
 }

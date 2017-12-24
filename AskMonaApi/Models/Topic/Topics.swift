@@ -8,16 +8,16 @@
 
 import Foundation
 
-public struct TopicsResponse: Decodable {
+public struct TopicsResponse: Codable {
+    let status: Int
+    let count: Int
     let topics: [Topic]
-
-//    enum CodingKeys: String, CodingKeys {
-//        case list = "topics"
-//    }
 }
 
-public struct Topic: Decodable {
+public struct Topic: Codable {
     // stub
     let rank: Int
     let title: String
+
+    // TODO: Add another required params
 }
