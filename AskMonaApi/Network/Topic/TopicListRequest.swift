@@ -20,7 +20,7 @@ public struct TopicListRequest: MultipleItemTopicRequest {
         categoryId: Int? = nil,
         tag: String? = nil,
         safeMode: Int? = nil,
-        order: TopicListRequestOrder?  = nil,
+        order: TopicListOrder?  = nil,
         limit: Int? = nil,
         offset: Int? = nil
     ) {
@@ -33,10 +33,9 @@ public struct TopicListRequest: MultipleItemTopicRequest {
         _preParameters["offset"] = offset
         preParameters = _preParameters
     }
-
 }
 
-public enum TopicListRequestOrder: String {
+public enum TopicListOrder: String {
     case updated = "updated"
     case created = "created"
     case favorites = "favorites"
