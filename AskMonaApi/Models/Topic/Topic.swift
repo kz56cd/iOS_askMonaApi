@@ -14,7 +14,7 @@ public struct Topic: Codable {
     let userId: Int
     let state: TopicState
     let title: String
-    let categoryId: Int
+    let categoryType: TopicCategoryType
     let category: String
     let tags: String?
     let leadString: String
@@ -34,7 +34,7 @@ public struct Topic: Codable {
         case userId = "u_id"
         case state
         case title
-        case categoryId = "cat_id"
+        case categoryType = "cat_id"
         case category
         case tags
         case leadString = "lead"
@@ -67,4 +67,48 @@ public enum ShowingHostState: Int, Codable {
     case cannotShow = 0
     case canShowId
     case canShowIdAndProviderName
+}
+
+public enum TopicCategoryType: Int, Codable {
+    case etc = 0
+    case baramaki
+    case beginner
+    case news
+    case discussion
+    case hobbyAndLife
+    case creativeAndCulture
+    case storyAndChat
+    case economyAndSocial
+    case scienceAndInformationTech
+    case mining
+    case r18
+
+    var text: String {
+        switch self {
+        case .etc:
+            return "その他"
+        case .baramaki:
+            return "ばらまき"
+        case .beginner:
+            return "初心者"
+        case .news:
+            return "ニュース"
+        case .discussion:
+            return "議論・討論"
+        case .hobbyAndLife:
+            return "趣味・生活"
+        case .creativeAndCulture:
+            return "創作・文化"
+        case .storyAndChat:
+            return "ネタ・雑談"
+        case .economyAndSocial:
+            return "経済・社会"
+        case .scienceAndInformationTech:
+            return "科学・IT"
+        case .mining:
+            return "採掘"
+        case .r18:
+            return "R18"
+        }
+    }
 }
