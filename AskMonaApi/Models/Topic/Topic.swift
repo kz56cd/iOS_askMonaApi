@@ -52,9 +52,10 @@ public struct Topic: Codable {
 
 public enum TopicState: Int, Codable {
     case canDisplay = 1
-    case canReceiveMonas = 2
+    case canSendMonas = 2
     case canEdit = 4
     case canComment = 8
+    case unknown = 255 // TODO: check detail
 }
 
 public enum TopicStateForAnonymous: Int, Codable {

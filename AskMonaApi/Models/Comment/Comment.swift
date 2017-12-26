@@ -10,7 +10,7 @@ import Foundation
 
 public struct Comment: Codable {
     let commentId: Int
-    let state: Int
+    let state: CommentState
     let created: Int
     let userId: Int
     let userName: String
@@ -36,4 +36,10 @@ public struct Comment: Codable {
         case host
         case content = "response"
     }
+}
+
+public enum CommentState: Int, Codable {
+    case canDisplay = 1
+    case canSendMonas = 2
+    case unknown = 255 // TODO: check detail
 }
