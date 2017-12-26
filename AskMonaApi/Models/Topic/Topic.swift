@@ -26,7 +26,7 @@ public struct Topic: Codable {
     let receivedMonas: String // MEMO: やり取りされたMONA（watanabe単位　1MONAは100,000,000watanabeです）。
     let favorites: Int
     let isEditable: TopicStateForAnonymous
-    let showingHostState: ShowingHostState // TODO: Mod Enum > 投稿した人のホスト情報を表示するかどうか。0は非表示。1はID表示。2はID＋プロバイダ名表示を意味します。
+    let showingHostState: ShowingHostState
 
     enum CodingKeys: String, CodingKey {
         case rank
