@@ -10,7 +10,7 @@ import Foundation
 import APIKit
 
 public struct OneUserRequest: SingleItemUserRequest {
-    public typealias Response = Comments
+    public typealias Response = User
     public let method: HTTPMethod = .get
     public let path: String = "/profile"
 
