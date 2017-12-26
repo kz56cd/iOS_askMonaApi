@@ -11,7 +11,7 @@ import APIKit
 
 public struct TopicRequestSetting: ApiRequestSetting {
     static let hostName: String = "askmona.org/v1"
-    static var basePath: String = "/topics"
+    static let basePath: String = "/topics"
     // add unique id
 }
 
