@@ -11,7 +11,7 @@ import APIKit
 
 public struct CommentRequestSetting: ApiRequestSetting {
     static let hostName: String = "askmona.org/v1"
-    static var basePath: String = "/responses"
+    static let basePath: String = "/responses"
     // add unique id
 }
 

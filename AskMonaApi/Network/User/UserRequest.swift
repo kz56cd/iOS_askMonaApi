@@ -11,7 +11,7 @@ import APIKit
 
 public struct UserRequestSetting: ApiRequestSetting {
     static let hostName: String = "askmona.org/v1"
-    static var basePath: String = "/users"
+    static let basePath: String = "/users"
 }
 
 public protocol UserRequest: AskMonaRequest {
