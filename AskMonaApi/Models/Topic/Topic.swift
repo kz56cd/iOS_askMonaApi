@@ -12,7 +12,7 @@ public struct Topic: Codable {
     let rank: Int
     let topicId: Int
     let userId: Int
-    let state: Int
+    let state: TopicState
     let title: String
     let categoryId: Int
     let category: String
@@ -25,8 +25,8 @@ public struct Topic: Codable {
     let resCount: Int
     let receivedMonas: String // MEMO: やり取りされたMONA（watanabe単位　1MONAは100,000,000watanabeです）。
     let favorites: Int
-    let isEditable: Int // TODO: Mod Bool
-    let isShowHost: Int // TODO: Mod Enum > 投稿した人のホスト情報を表示するかどうか。0は非表示。1はID表示。2はID＋プロバイダ名表示を意味します。
+    let isEditable: TopicStateForAnonymous
+    let showingHostState: ShowingHostState // TODO: Mod Enum > 投稿した人のホスト情報を表示するかどうか。0は非表示。1はID表示。2はID＋プロバイダ名表示を意味します。
 
     enum CodingKeys: String, CodingKey {
         case rank
@@ -46,6 +46,24 @@ public struct Topic: Codable {
         case receivedMonas = "receive"
         case favorites
         case isEditable = "editable"
-        case isShowHost = "sh_host"
+        case showingHostState = "sh_host"
     }
+}
+
+public enum TopicState: Int, Codable {
+    case canDisplay = 1
+    case canReceiveMonas = 2
+    case canEdit = 4
+    case canComment = 8
+}
+
+public enum TopicStateForAnonymous: Int, Codable {
+    case cannotEdit = 0
+    case canEdit
+}
+
+public enum ShowingHostState: Int, Codable {
+    case cannotShow = 0
+    case canShowId
+    case canShowIdAndProviderName
 }
