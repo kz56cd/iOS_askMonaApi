@@ -23,7 +23,7 @@ public extension CommentRequest {
     var baseURL: URL {
         return URL(string: "http://\(CommentRequestSetting.hostName)\(CommentRequestSetting.basePath)")!
     }
-    
+
     var parameters: Any? {
         let _parameters: [String: Any] = preParameters ?? [:]
         // add any common parameters (AS YOU LIKE)
@@ -32,7 +32,7 @@ public extension CommentRequest {
 }
 
 public protocol MultipleItemCommentRequest: CommentRequest where Response: Codable {
-    
+
 }
 
 // TODO: FIX pagination methods

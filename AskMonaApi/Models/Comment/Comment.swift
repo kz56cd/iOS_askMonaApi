@@ -21,7 +21,7 @@ public struct Comment: Codable {
     let receivedMonasUsersCount: Int
     let host: String?
     let content: String
-    
+
     enum CodingKeys: String, CodingKey {
         case commentId = "r_id"
         case state

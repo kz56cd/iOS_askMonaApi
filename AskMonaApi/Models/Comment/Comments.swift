@@ -13,7 +13,7 @@ public struct Comments: Codable {
     let updated: Int
     let modified: Int
     let list: [Comment]
-    
+
     enum CodingKeys: String, CodingKey {
         case status
         case updated

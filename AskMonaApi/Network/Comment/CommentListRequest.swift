@@ -13,7 +13,7 @@ public struct CommentListRequest: MultipleItemCommentRequest {
     public typealias Response = Comments
     public let method: HTTPMethod = .get
     public let path: String = "/list"
-    
+
     public let preParameters: [String: Any]?
 
     public init(
