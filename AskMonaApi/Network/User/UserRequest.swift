@@ -1,27 +1,26 @@
 //
-//  CommentRequest.swift
+//  UserRequest.swift
 //  AskMonaApi
 //
-//  Created by msano on 2017/12/26.
+//  Created by msano on 2017/12/27.
 //  Copyright © 2017年 kz56cd. All rights reserved.
 //
 
 import Foundation
 import APIKit
 
-public struct CommentRequestSetting: ApiRequestSetting {
+public struct UserRequestSetting: ApiRequestSetting {
     static let hostName: String = "askmona.org/v1"
-    static let basePath: String = "/responses"
-    // add unique id
+    static let basePath: String = "/users"
 }
 
-public protocol CommentRequest: AskMonaRequest {
+public protocol UserRequest: AskMonaRequest {
     var preParameters: [String: Any]? { get }
 }
 
-public extension CommentRequest {
+public extension UserRequest {
     var baseURL: URL {
-        return URL(string: "http://\(CommentRequestSetting.hostName)\(CommentRequestSetting.basePath)")!
+        return URL(string: "http://\(UserRequestSetting.hostName)\(UserRequestSetting.basePath)")!
     }
 
     var parameters: Any? {
@@ -31,12 +30,11 @@ public extension CommentRequest {
     }
 }
 
-public protocol MultipleItemCommentRequest: CommentRequest where Response: Codable {
+public protocol SingleItemUserRequest: UserRequest where Response: Codable {
 
 }
 
-// TODO: FIX pagination methods
-public extension MultipleItemCommentRequest {
+public extension SingleItemUserRequest {
     public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
         guard let dictionary = object as? [String: Any],
             let status = dictionary["status"] as? Int else {
