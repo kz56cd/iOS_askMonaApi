@@ -35,6 +35,8 @@
 		EA8B04261FF1D2F1008D51EB /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8B04251FF1D2F1008D51EB /* Comment.swift */; };
 		EA8B04291FF1E180008D51EB /* CommentRequestWithNetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8B04281FF1E180008D51EB /* CommentRequestWithNetworkSpec.swift */; };
 		EA8B042B1FF1E18B008D51EB /* CommentRequestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8B042A1FF1E18B008D51EB /* CommentRequestSpec.swift */; };
+		EA8B042E1FF2AC31008D51EB /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8B042D1FF2AC31008D51EB /* UserRequest.swift */; };
+		EA8B04301FF2AD45008D51EB /* OneUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8B042F1FF2AD45008D51EB /* OneUserRequest.swift */; };
 		EAD80BD31FEE699300D51E80 /* TopicApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD80BD21FEE699300D51E80 /* TopicApiError.swift */; };
 		EAD80BD51FEE6BFD00D51E80 /* TopicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD80BD41FEE6BFD00D51E80 /* TopicRequest.swift */; };
 		EAD80BD81FEF3CEF00D51E80 /* Topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD80BD71FEF3CEF00D51E80 /* Topics.swift */; };
@@ -96,6 +98,8 @@
 		EA8B04251FF1D2F1008D51EB /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		EA8B04281FF1E180008D51EB /* CommentRequestWithNetworkSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRequestWithNetworkSpec.swift; sourceTree = "<group>"; };
 		EA8B042A1FF1E18B008D51EB /* CommentRequestSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRequestSpec.swift; sourceTree = "<group>"; };
+		EA8B042D1FF2AC31008D51EB /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		EA8B042F1FF2AD45008D51EB /* OneUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneUserRequest.swift; sourceTree = "<group>"; };
 		EAD80BD21FEE699300D51E80 /* TopicApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicApiError.swift; sourceTree = "<group>"; };
 		EAD80BD41FEE6BFD00D51E80 /* TopicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicRequest.swift; sourceTree = "<group>"; };
 		EAD80BD71FEF3CEF00D51E80 /* Topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topics.swift; sourceTree = "<group>"; };
@@ -230,6 +234,7 @@
 				EA434F241FED62C700F31E64 /* Client */,
 				EA434F231FED62C700F31E64 /* Topic */,
 				EA8B04191FF1CF6A008D51EB /* Comment */,
+				EA8B042C1FF2AC1C008D51EB /* User */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -292,6 +297,15 @@
 				EA8B04281FF1E180008D51EB /* CommentRequestWithNetworkSpec.swift */,
 			);
 			path = Comment;
+			sourceTree = "<group>";
+		};
+		EA8B042C1FF2AC1C008D51EB /* User */ = {
+			isa = PBXGroup;
+			children = (
+				EA8B042D1FF2AC31008D51EB /* UserRequest.swift */,
+				EA8B042F1FF2AD45008D51EB /* OneUserRequest.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		EAD80BD61FEF3CDA00D51E80 /* Topic */ = {
@@ -475,6 +489,8 @@
 				EAD80BD81FEF3CEF00D51E80 /* Topics.swift in Sources */,
 				EA8B04241FF1D2E9008D51EB /* Comments.swift in Sources */,
 				EA368D1F1FE73E18001F262D /* AskMonaSessionTask.swift in Sources */,
+				EA8B042E1FF2AC31008D51EB /* UserRequest.swift in Sources */,
+				EA8B04301FF2AD45008D51EB /* OneUserRequest.swift in Sources */,
 				EA368D231FE73EDF001F262D /* AskMonaApiClient.swift in Sources */,
 				EA368D1B1FE73D9D001F262D /* AskMonaRequest.swift in Sources */,
 				EA368D211FE73EA4001F262D /* AskMonaApiError.swift in Sources */,
