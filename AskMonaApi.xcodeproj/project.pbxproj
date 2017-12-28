@@ -28,6 +28,8 @@
 		EA368D1F1FE73E18001F262D /* AskMonaSessionTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA368D1E1FE73E18001F262D /* AskMonaSessionTask.swift */; };
 		EA368D211FE73EA4001F262D /* AskMonaApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA368D201FE73EA4001F262D /* AskMonaApiError.swift */; };
 		EA368D231FE73EDF001F262D /* AskMonaApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA368D221FE73EDF001F262D /* AskMonaApiClient.swift */; };
+		EA701D4E1FF503A3008D464F /* AppSecretProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA701D4D1FF503A3008D464F /* AppSecretProvider.swift */; };
+		EA701D511FF504E0008D464F /* AppSecretConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA701D501FF504E0008D464F /* AppSecretConstants.swift */; };
 		EA8B04181FF14562008D51EB /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8B04171FF14562008D51EB /* Topic.swift */; };
 		EA8B041F1FF1D1B6008D51EB /* CommentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8B041E1FF1D1B6008D51EB /* CommentRequest.swift */; };
 		EA8B04211FF1D1C4008D51EB /* CommentListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8B04201FF1D1C4008D51EB /* CommentListRequest.swift */; };
@@ -94,6 +96,8 @@
 		EA368D1E1FE73E18001F262D /* AskMonaSessionTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMonaSessionTask.swift; sourceTree = "<group>"; };
 		EA368D201FE73EA4001F262D /* AskMonaApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMonaApiError.swift; sourceTree = "<group>"; };
 		EA368D221FE73EDF001F262D /* AskMonaApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMonaApiClient.swift; sourceTree = "<group>"; };
+		EA701D4D1FF503A3008D464F /* AppSecretProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecretProvider.swift; sourceTree = "<group>"; };
+		EA701D501FF504E0008D464F /* AppSecretConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecretConstants.swift; sourceTree = "<group>"; };
 		EA8B04171FF14562008D51EB /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		EA8B041E1FF1D1B6008D51EB /* CommentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRequest.swift; sourceTree = "<group>"; };
 		EA8B04201FF1D1C4008D51EB /* CommentListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListRequest.swift; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 		EA368CCC1FE724E1001F262D /* AskMonaApi */ = {
 			isa = PBXGroup;
 			children = (
+				EA701D4C1FF50359008D464F /* Constants */,
 				EA368CEA1FE72697001F262D /* Network */,
 				EA368CE81FE72697001F262D /* Models */,
 				EA368CE91FE72697001F262D /* Extensions */,
@@ -221,6 +226,7 @@
 		EA368CE81FE72697001F262D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EA701D4F1FF504CE008D464F /* Constants */,
 				EAD80BD61FEF3CDA00D51E80 /* Topic */,
 				EA8B04221FF1D2D9008D51EB /* Comment */,
 				EA8B04311FF2AE51008D51EB /* User */,
@@ -278,6 +284,22 @@
 				EA368D1E1FE73E18001F262D /* AskMonaSessionTask.swift */,
 			);
 			path = Client;
+			sourceTree = "<group>";
+		};
+		EA701D4C1FF50359008D464F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EA701D4D1FF503A3008D464F /* AppSecretProvider.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		EA701D4F1FF504CE008D464F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EA701D501FF504E0008D464F /* AppSecretConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		EA8B04191FF1CF6A008D51EB /* Comment */ = {
@@ -511,6 +533,7 @@
 				EA8B04181FF14562008D51EB /* Topic.swift in Sources */,
 				EA8B04261FF1D2F1008D51EB /* Comment.swift in Sources */,
 				EAD80BD51FEE6BFD00D51E80 /* TopicRequest.swift in Sources */,
+				EA701D511FF504E0008D464F /* AppSecretConstants.swift in Sources */,
 				EAD80BD81FEF3CEF00D51E80 /* Topics.swift in Sources */,
 				EA8B04241FF1D2E9008D51EB /* Comments.swift in Sources */,
 				EA8B04331FF2AE63008D51EB /* User.swift in Sources */,
@@ -518,6 +541,7 @@
 				EA8B042E1FF2AC31008D51EB /* UserRequest.swift in Sources */,
 				EA8B04301FF2AD45008D51EB /* OneUserRequest.swift in Sources */,
 				EA368D231FE73EDF001F262D /* AskMonaApiClient.swift in Sources */,
+				EA701D4E1FF503A3008D464F /* AppSecretProvider.swift in Sources */,
 				EA368D1B1FE73D9D001F262D /* AskMonaRequest.swift in Sources */,
 				EA368D211FE73EA4001F262D /* AskMonaApiError.swift in Sources */,
 				EA368CEC1FE727A2001F262D /* ApiRequestSetting.swift in Sources */,
