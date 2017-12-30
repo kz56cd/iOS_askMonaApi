@@ -10,7 +10,7 @@ import Foundation
 
 public final class AppSecretProvider {
     let appSecretConstants: AppSecretConstants?
-    
+
     public init() {
         guard let jsonPath = Bundle.main.path(forResource: "app_secret_constants", ofType: "json"),
             let data = try? Data(contentsOf: URL(fileURLWithPath: jsonPath)) else {
