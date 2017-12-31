@@ -9,9 +9,11 @@
 import Foundation
 
 public struct AppSecretConstants: Codable {
-    let secretKey: String
+    let appId: String
+    let appSecretKey: String
 
     enum CodingKeys: String, CodingKey {
-        case secretKey = "app_secret_key"
+        case appId = "app_id"
+        case appSecretKey = "app_secret_key"
     }
 }
