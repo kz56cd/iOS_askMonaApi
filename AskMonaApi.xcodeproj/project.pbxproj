@@ -185,12 +185,11 @@
 		EA368CD71FE724E1001F262D /* AskMonaApiTests */ = {
 			isa = PBXGroup;
 			children = (
+				EA4FBBAD1FF9E44000E43BF1 /* Constants */,
 				EA368CE51FE7268F001F262D /* Network */,
 				EA368CE41FE7268F001F262D /* Models */,
 				EA368CE71FE7268F001F262D /* Extensions */,
 				EA368CE61FE7268F001F262D /* Resources */,
-				EADC65E51FF7BD4300175007 /* AppSecretConstantsProviderSpec.swift */,
-				EA368CD81FE724E1001F262D /* AskMonaApiTests.swift */,
 				EA368CDA1FE724E1001F262D /* Info.plist */,
 			);
 			path = AskMonaApiTests;
@@ -290,6 +289,15 @@
 				EA368D1E1FE73E18001F262D /* AskMonaSessionTask.swift */,
 			);
 			path = Client;
+			sourceTree = "<group>";
+		};
+		EA4FBBAD1FF9E44000E43BF1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EADC65E51FF7BD4300175007 /* AppSecretConstantsProviderSpec.swift */,
+				EA368CD81FE724E1001F262D /* AskMonaApiTests.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		EA701D4C1FF50359008D464F /* Constants */ = {

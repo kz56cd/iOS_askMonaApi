@@ -5,6 +5,9 @@
 ## OSX
 .DS_Store
 
+## for empty dirctory
+!.gitkeep
+
 ## Build generated
 build/
 DerivedData/
