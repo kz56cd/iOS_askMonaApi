@@ -19,7 +19,7 @@ public struct CommentListRequest: MultipleItemCommentRequest {
     public init(
         topicId: Int,
         from: String? = nil,
-        to: Int? = nil,
+        to: Int? = nil, // swiftlint:disable:this identifier_name
         isGetTopicDetail: Bool?  = nil,
         ifModifiedSince: Int? = nil // TODO: 命名変更
         ) {

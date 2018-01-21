@@ -416,10 +416,10 @@
 			buildPhases = (
 				EA368CC51FE724E1001F262D /* Sources */,
 				EA368CC61FE724E1001F262D /* Frameworks */,
-				EA368CC71FE724E1001F262D /* Headers */,
 				EA368CC81FE724E1001F262D /* Resources */,
-				EA368CF41FE734D2001F262D /* Carthage */,
+				EA368CC71FE724E1001F262D /* Headers */,
 				EAEC6E9F1FE91361007DDD0C /* Swiftlint */,
+				EA368CF41FE734D2001F262D /* Carthage */,
 			);
 			buildRules = (
 			);
