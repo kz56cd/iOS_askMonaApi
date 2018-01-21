@@ -9,8 +9,20 @@
 import Foundation
 import APIKit
 
-public struct AskMonaApiError: Error {
+public enum AskMonaApiError: Error {
+    case connectionError(Error)
+    case requestError(Error)
+    case responseError(Error)
+
     init(apiKitError: SessionTaskError) {
-        // stub
+        switch apiKitError {
+        case let .connectionError(error):
+            self = .connectionError(error)
+        case let .requestError(error):
+            self = .requestError(error)
+        case let .responseError(error):
+            // TODO: ドメイン固有のエラーはこちらで処理させる
+            self = .responseError(error)
+        }
     }
 }

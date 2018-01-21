@@ -27,7 +27,7 @@ private func escape(_ string: String) -> String {
         let endIndex = string.index(index, offsetBy: batchSize, limitedBy: string.endIndex) ?? string.endIndex
         let range = startIndex..<endIndex
 
-        let substring = string.substring(with: range)
+        let substring = String(string[range])
 
         escaped += substring.addingPercentEncoding(withAllowedCharacters: allowedCharacterSet) ?? substring
 
@@ -87,7 +87,7 @@ public final class URLEncodedSerialization {
         return data
     }
 
-    /// Returns urlencoded `Data` from the string.
+    /// Returns urlencoded `String` from the dictionary.
     public static func string(from dictionary: [String: Any]) -> String {
         let pairs = dictionary.map { key, value -> String in
             if value is NSNull {
